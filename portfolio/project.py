@@ -1,7 +1,7 @@
-from flask import Blueprint 
+from flask import (Blueprint, render_template)
 
 bp = Blueprint('project', __name__, url_prefix="/projects")
 
 @bp.route('/')
 def index(): 
-    return 'this is the project page'
+    return render_template('index.html')
