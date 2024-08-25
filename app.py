@@ -1,8 +1,3 @@
-# config                    
-from flask import Flask
-app = Flask(__name__)
+from portfolio import create_app
+app = create_app()
 
-# index route
-@app.route('/')
-def index(): 
-    return 'Hello, this is PetFax!'
